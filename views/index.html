@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Номер клиента с Wildberries БЕСПЛАТНО</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" href="/static/favicon.ico">
+    </head>
+    <body>
+        <div class="wrapper inputs" id="wrapper">
+            <form class="form">
+                <div class="title">Получить номер клиента с Wildberries</div>
+                <div class="sub">Доп инфа о том как всё делается -> <a href="/info">ссылка</a></div>
+
+                <div class="apikey">
+                    <img alt="Ключ" class="icon" src="/static/hashtag.svg">
+                    <input type="text" placeholder="Введите номер заказа" required="required" value="" id="number">
+                </div>
+
+                <div class="apikey">
+                    <img alt="Ключ" class="icon" src="/static/key.svg">
+                    <input type="text" placeholder="Введите API ключ" required="required" value="" id="api">
+                </div>
+
+                <div class="submit-button" id="submitButton">
+                    <div class="shine-line">
+                    <div class="line"></div></div>
+                    Получить телефон
+                </div>
+            </form>
+            <div class="loader">
+                <img src="/static/loader.gif">
+            </div>
+            <div class="results">
+                <div class="result-field">
+                    <div class="field-title">Номер телефона</div>
+                    <div class="field-result" id="phone"></div>
+                </div>
+
+                <div class="result-field">
+                    <div class="field-title">ФИО заказчика</div>
+                    <div class="field-result" id="fio"></div>
+                </div>
+
+                <div class="result-field">
+                    <div class="field-title">Адрес ПВЗ</div>
+                    <div class="field-result" id="address"></div>
+                </div>
+
+                <div class="submit-button" id="resetButton">
+                    Ввести другое отправление
+                </div>
+            </div>
+            <div class="desc">Сделал на коленке -> <a href="https://vk.com/alex_kscv" target="_blank">alex_kscv</a> | всё что вы вводите - не сохраняется | <!--a href="https://vk.com/alex_kscv" target="_blank">исходники для параноиков</a--></div>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/static/script.js" lang="text/javascript"></script>
+    </body>
+</html>
